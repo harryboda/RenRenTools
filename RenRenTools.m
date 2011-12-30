@@ -17,7 +17,9 @@
 }
 +(NSString *)GetAppID
 {
-    return nil;
+    NSString* AppID=(NSString *)[[[NSBundle mainBundle] infoDictionary] objectForKey:@"AppID"];
+    
+    return AppID;
 }
 
 
